@@ -26,7 +26,7 @@ This is a simple password generator app that allows the user to generate a passw
 
 ## Live Demo
 
-![](https://user-images.githubusercontent.com/61500922/212269972-19437b43-75e2-4ae6-a14c-c1d061bdb822.gif))
+![](https://user-images.githubusercontent.com/61500922/212269972-19437b43-75e2-4ae6-a14c-c1d061bdb822.gif)
     
 ## Note
 
