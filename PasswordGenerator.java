@@ -19,17 +19,11 @@ public class PasswordGenerator {
         frame = new JFrame("Password Generator");
         frame.setSize(300, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        
         panel = new JPanel();
         panel.setLayout(null);
-
-        
         label = new JLabel("Password Options:");
         label.setBounds(20, 20, 120, 20);
         panel.add(label);
-
-        
         lowercaseBox = new JCheckBox("Lowercase letters");
         lowercaseBox.setBounds(20, 50, 150, 20);
         panel.add(lowercaseBox);
@@ -42,23 +36,17 @@ public class PasswordGenerator {
         digitsBox = new JCheckBox("Digits");
         digitsBox.setBounds(20, 140, 150, 20);
         panel.add(digitsBox);
-
-       
         lengthField = new JTextField();
         lengthField.setBounds(20, 180, 50, 20);
         panel.add(lengthField);
-
-        
         generateButton = new JButton("Generate");
         generateButton.setBounds(80, 180, 100, 20);
         panel.add(generateButton);
 
-        
         passwordField = new JTextArea();
         passwordField.setBounds(20, 210, 250, 50);
         passwordField.setEditable(false);
         panel.add(passwordField);
-
         
         generateButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
