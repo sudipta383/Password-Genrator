@@ -15,21 +15,21 @@ public class PasswordGenerator {
     private JTextArea passwordField;
 
     public PasswordGenerator() {
-        // Initialize the frame
+        
         frame = new JFrame("Password Generator");
         frame.setSize(300, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Initialize the panel
+        
         panel = new JPanel();
         panel.setLayout(null);
 
-        // Initialize the label
+        
         label = new JLabel("Password Options:");
         label.setBounds(20, 20, 120, 20);
         panel.add(label);
 
-        // Initialize the checkboxes
+        
         lowercaseBox = new JCheckBox("Lowercase letters");
         lowercaseBox.setBounds(20, 50, 150, 20);
         panel.add(lowercaseBox);
@@ -43,23 +43,23 @@ public class PasswordGenerator {
         digitsBox.setBounds(20, 140, 150, 20);
         panel.add(digitsBox);
 
-        // Initialize the text field for length
+       
         lengthField = new JTextField();
         lengthField.setBounds(20, 180, 50, 20);
         panel.add(lengthField);
 
-        // Initialize the generate button
+        
         generateButton = new JButton("Generate");
         generateButton.setBounds(80, 180, 100, 20);
         panel.add(generateButton);
 
-        // Initialize the password field
+        
         passwordField = new JTextArea();
         passwordField.setBounds(20, 210, 250, 50);
         passwordField.setEditable(false);
         panel.add(passwordField);
 
-        // Add action listener to the generate button
+        
         generateButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String characters = "";
@@ -75,21 +75,21 @@ public class PasswordGenerator {
                 if (digitsBox.isSelected()) {
                 characters += "0123456789";
                 }
-                            // Get the desired length of the password
+                            
                             int length = Integer.parseInt(lengthField.getText());
 
-            // Generate the password
+            
             String password = generatePassword(characters, length);
 
-            // Display the password in the password field
+            
             passwordField.setText(password);
         }
     });
 
-    // Add the panel to the frame
+    
     frame.add(panel);
 
-    // Make the frame visible
+    
     frame.setVisible(true);
 }
 
